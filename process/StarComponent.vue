@@ -7,26 +7,26 @@
 
 <script>
 export default {
-    name: 'StarComponent',
-    data() {
-        return {
-            starCount: 0
-        }
+   name: 'StarComponent',
+   data() {
+      return {
+         starCount: 0
+      }
     },
-  methods:{
+    methods:{
       removeStar: function() {
-        if (this.starCount === 0) {
-              return;
-        }
+         if (this.starCount === 0) {
+            return;
+         }
         
-        this.starCount--;
+         this.starCount--;
       },
       addStar: function() {
-        if (this.starCount === 5) {
-              return;
-        }
+         if (this.starCount === 5) {
+            return;
+         }
         
-        this.starCount++;
+         this.starCount++;
       }
   }
 }
